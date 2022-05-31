@@ -19,7 +19,7 @@ public class Owner {
     private String email;
 
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinColumn(name = "blog_id")
+    @JoinColumn(name = "owner_id")
     private List<Blog> blogList;
 
     public Owner() {
